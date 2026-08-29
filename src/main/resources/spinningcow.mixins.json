@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "dev.spinningcow.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"SpinningCowMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
