@@ -1,12 +1,16 @@
-# Example Mod
+# Spinning Cow
 
-## Setup
+<img src="src/main/resources/assets/spinningcow/icon.png" width="128" align="right">
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+A silly mod by Elduin. Hit a cow and it starts spinning, faster and faster.
+Then it launches into space... and fails the landing.
 
-## License
+- **Hit a cow.** It spins in place, faster and faster.
+- **Liftoff.** Whoosh! It flies straight up into the sky.
+- **The landing.** It comes back down. It does not land well.
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Works with Minecraft 26.2 and 1.21.11 on Fabric. You also need
+[Fabric API](https://modrinth.com/mod/fabric-api).
 
 ## Other Minecraft versions
 
