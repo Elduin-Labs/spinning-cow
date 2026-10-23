@@ -1,0 +1,22 @@
+{
+	"parent": "minecraft:husbandry/root",
+	"display": {
+		"icon": {
+			"id": "minecraft:cow_spawn_egg"
+		},
+		"title": {
+			"translate": "advancements.spinningcow.cow_priority_seeding.title"
+		},
+		"description": {
+			"translate": "advancements.spinningcow.cow_priority_seeding.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true
+	},
+	"criteria": {
+		"launched": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}
