@@ -7,7 +7,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.animal.Cow;
+import net.minecraft.world.entity.animal.cow.AbstractCow;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -43,7 +43,7 @@ public abstract class SpinningCowMixin implements SpinningCow {
 		}
 
 		LivingEntity self = (LivingEntity)(Object)this;
-		if (!(self.level() instanceof ServerLevel level) || !(self instanceof Cow)) {
+		if (!(self.level() instanceof ServerLevel level) || !(self instanceof AbstractCow)) {
 			return;
 		}
 
@@ -62,7 +62,7 @@ public abstract class SpinningCowMixin implements SpinningCow {
 		self.yBodyRot = yRot;
 
 		// We handle the landing ourselves, so vanilla fall damage never applies.
-		self.fallDistance = 0.0F;
+		self.fallDistance = 0.0;
 
 		if (!this.spinningcow$falling) {
 			self.setNoGravity(true);
@@ -90,7 +90,7 @@ public abstract class SpinningCowMixin implements SpinningCow {
 			this.spinningcow$ticks = -1;
 			self.setNoGravity(false);
 			level.playSound(null, self.blockPosition(), SoundEvents.GENERIC_EXPLODE.value(), SoundSource.NEUTRAL, 1.0F, 1.0F);
-			self.kill();
+			self.kill(level);
 			level.getServer()
 				.getPlayerList()
 				.broadcastSystemMessage(Component.translatable("death.attack.spinningcow.failed_landing"), false);
