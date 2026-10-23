@@ -1,0 +1,21 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:cow_spawn_egg"
+		},
+		"title": {
+			"translate": "advancements.spinningcow.root.title"
+		},
+		"description": {
+			"translate": "advancements.spinningcow.root.description"
+		},
+		"background": "minecraft:gui/advancements/backgrounds/husbandry",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"joined": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

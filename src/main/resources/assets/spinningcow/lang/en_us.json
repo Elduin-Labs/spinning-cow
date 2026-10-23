@@ -1,5 +1,7 @@
 {
 	"death.attack.spinningcow.failed_landing": "The cow failed the landing.",
+	"advancements.spinningcow.root.title": "Spinning Cows",
+	"advancements.spinningcow.root.description": "Hit a cow. See what happens.",
 	"advancements.spinningcow.cow_priority_seeding.title": "Cow Priority Seeding",
 	"advancements.spinningcow.cow_priority_seeding.description": "Hit a cow and send it to space"
 }
